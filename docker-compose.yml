@@ -28,7 +28,7 @@ services:
           - CORES_DIR=/cores
         volumes:
           - .:/pg_service_template:rw
-          - ./third_party/userver/tools/docker:/tools:ro
+          - ./third_party/userver/scripts/docker/:/tools:ro
           - ${TC_CORES_DIR:-./.cores}:/cores:rw
         ports:
           - 8080:8080
